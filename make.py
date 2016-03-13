@@ -35,7 +35,7 @@ if sys_name == 'Linux':
     print '\nMaking for Linux...\n'
     if os.system('cd build && cmake .. && echo') == 0:
         if not only_cmake:
-            os.system('cd build && make')
+            os.system('cd build && make -j$(sort -u /proc/cpuinfo | grep -c processor)')
 
 elif sys_name == 'Darwin':
     print '\nMaking for OS X...\n'
