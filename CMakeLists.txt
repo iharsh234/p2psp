@@ -149,18 +149,18 @@ endif()
 
 if(BUILD_TEST)
   # Executable
-  add_executable(test 
+  add_executable(testp2psp 
     "src/test.cc"
     "src/util/trace.cc"
   )
 
   # Libraries
-  target_link_libraries(test 
+  target_link_libraries(testp2psp 
     ${CMAKE_THREAD_LIBS_INIT}
     ${Boost_LIBRARIES}
   )
   
   # Enable C++11 for CMake 3.1.0 or later
-  set_property(TARGET test PROPERTY CXX_STANDARD 11)
-  set_property(TARGET test PROPERTY CXX_STANDARD_REQUIRED ON)
+  set_property(TARGET testp2psp PROPERTY CXX_STANDARD 11)
+  set_property(TARGET testp2psp PROPERTY CXX_STANDARD_REQUIRED ON)
 endif()
