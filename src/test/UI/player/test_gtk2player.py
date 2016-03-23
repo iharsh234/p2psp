@@ -1,12 +1,13 @@
 #script tested with python2.7
 
+
 import sys,os
 
 module_path = os.path.join(os.path.dirname(__file__),"../../..")
 sys.path.append(module_path)
 
-from src.common.decorators import exc_handler
-from src.lib import vlc
+from gui.common.decorators import exc_handler
+from gui.lib import vlc
 import gtk
 
 
