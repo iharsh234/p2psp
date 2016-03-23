@@ -5,11 +5,11 @@ import sys,os
 module_path = os.path.join(os.path.dirname(__file__),"../../..")
 sys.path.append(module_path)
 
-import src.common.file_util as file_util
-from src.common.decorators import exc_handler
+import gui.common.file_util as file_util
+from gui.common.decorators import exc_handler
 from gi.repository import GdkX11
 from gi.repository import Gtk
-from src.lib import vlc
+from gui.lib import vlc
 
 
 path = file_util.find_file(__file__,
